@@ -23,7 +23,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: derivedpuma7/gitops:latest
+          tags: ${{github.sha}}, derivedpuma7/gitops:latest
           # tags: ${{github.sha}}, latest
 
       # - name: Build and push image to Dockerhub
