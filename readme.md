@@ -26,3 +26,19 @@ kind create cluster --name=gitops
 ```console
 kubectl cluster-info --context kind-gitops
 ```
+
+## ArgoCD
+### Apply argo config to k8s pods
+```console
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+### Get argocd first login password
+```console
+argocd admin initial-password -n argocd
+```
+
+### Argocd port-forwarding
+```console
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
