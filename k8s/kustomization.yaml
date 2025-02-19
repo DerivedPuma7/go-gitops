@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: derivedpuma7/gitops
-  newTag: 95926879c9676670fde284e96f89fa3887347fc7
+  newTag: c2051016c4726666d01d598d6f9368e99a44f026
